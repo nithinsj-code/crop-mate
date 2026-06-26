@@ -28,17 +28,11 @@ const Register = () => {
 
     setLoading(true);
     try {
-      const res = await api.post('/auth/register', {
-        name: formData.name,
-        email: formData.email,
-        password: formData.password
-      });
-      
-      login(res.data.user, res.data.token);
-      toast.success('Registration successful!');
+      await register(formData.email, formData.password, formData.name);
+      toast.success('Registration successful! Please check your email to verify your account.');
       navigate('/dashboard');
     } catch (err) {
-      toast.error(err.response?.data?.message || 'Registration failed');
+      toast.error(err.message || 'Registration failed');
     } finally {
       setLoading(false);
     }

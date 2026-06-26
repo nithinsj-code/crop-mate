@@ -19,7 +19,7 @@ const Navbar = ({ toggleSidebar }) => {
           </button>
           
           <h1 className="ml-2 md:ml-0 text-xl font-semibold text-gray-800">
-            Welcome back, {user?.name || 'Farmer'} 👋
+            Welcome back, {user?.user_metadata?.name || 'Farmer'} 👋
           </h1>
         </div>
 
