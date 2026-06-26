@@ -45,7 +45,7 @@ Respond ONLY in this JSON format (no markdown, no explanation):
 };
 
 // @route   POST api/ai/chat
-// @desc    Chat with Krishi Assistant
+// @desc    Chat with Naturo Assistant
 // @access  Private
 exports.chat = async (req, res) => {
   try {
@@ -65,7 +65,7 @@ exports.chat = async (req, res) => {
         maxOutputTokens: 1000,
       },
       systemInstruction: {
-        parts: [{ text: "You are CropMate's Krishi Assistant, an expert in Indian agriculture. Answer farming questions in simple English or Hinglish. Be concise and practical." }]
+        parts: [{ text: "You are NaturoCrop's Naturo Assistant, an expert in Indian agriculture. Answer farming questions in simple English or Hinglish. Be concise and practical." }]
       }
     });
 
@@ -73,6 +73,6 @@ exports.chat = async (req, res) => {
     res.json({ reply: result.response.text() });
   } catch (err) {
     console.error('Gemini Chat Error:', err.message);
-    res.status(500).json({ message: 'Failed to communicate with Krishi Assistant' });
+    res.status(500).json({ message: 'Failed to communicate with Naturo Assistant' });
   }
 };

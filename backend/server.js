@@ -17,7 +17,7 @@ app.use('/api/weather', require('./routes/weatherRoutes'));
 
 // Basic route
 app.get('/', (req, res) => {
-  res.send('CropMate AI/Weather API is running');
+  res.send('NaturoCrop AI/Weather API is running');
 });
 
 app.listen(PORT, () => {

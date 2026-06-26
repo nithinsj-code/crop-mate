@@ -52,9 +52,9 @@ const Landing = () => {
       <footer className="bg-[#1B4332] text-white py-8 text-center">
         <div className="flex items-center justify-center gap-2 mb-4">
           <span className="text-2xl">🌱</span>
-          <span className="text-xl font-bold">CropMate</span>
+          <span className="text-xl font-bold">NaturoCrop</span>
         </div>
-        <p className="text-green-200">© 2026 CropMate. All rights reserved.</p>
+        <p className="text-green-200">© 2026 NaturoCrop. All rights reserved.</p>
       </footer>
     </div>
   );

@@ -3,10 +3,12 @@ import { Routes, Route } from 'react-router-dom';
 import Sidebar from '../../components/Sidebar';
 import Navbar from '../../components/Navbar';
 
-// Dashboard Sub-pages (Placeholders for now)
-const Overview = () => <div className="p-6">Dashboard Overview Content</div>;
-const MyFarms = () => <div className="p-6">My Farms Content</div>;
-const Activities = () => <div className="p-6">Activities Content</div>;
+import Overview from './Overview';
+import MyFarms from './MyFarms';
+import Activities from './Activities';
+import Expenses from './Expenses';
+// Note: We will build AiAdvisor and NaturoAssistant in the next step
+const Placeholder = ({ title }) => <div className="p-6">{title} Content Coming Soon...</div>;
 
 const Dashboard = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -23,7 +25,12 @@ const Dashboard = () => {
             <Route path="/" element={<Overview />} />
             <Route path="/farms" element={<MyFarms />} />
             <Route path="/activities" element={<Activities />} />
-            {/* Add more routes here as we build them */}
+            <Route path="/expenses" element={<Expenses />} />
+            <Route path="/ai-advisor" element={<Placeholder title="AI Crop Advisor" />} />
+            <Route path="/naturo-assistant" element={<Placeholder title="Naturo Assistant" />} />
+            <Route path="/weather" element={<Placeholder title="Weather" />} />
+            <Route path="/govt-schemes" element={<Placeholder title="Govt Schemes" />} />
+            <Route path="/settings" element={<Placeholder title="Settings" />} />
           </Routes>
         </main>
       </div>

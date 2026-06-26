@@ -18,9 +18,9 @@ const Sidebar = ({ isOpen, setOpen }) => {
     { name: 'My Farms', path: '/dashboard/farms', icon: <Map size={20} /> },
     { name: 'Activities', path: '/dashboard/activities', icon: <ClipboardList size={20} /> },
     { name: 'Expenses', path: '/dashboard/expenses', icon: <CircleDollarSign size={20} /> },
-    { name: 'AI Crop Advisor', path: '/dashboard/crop-advisor', icon: <Sprout size={20} /> },
-    { name: 'Krishi Assistant', path: '/dashboard/krishi-assistant', icon: <MessageSquare size={20} /> },
-    { name: 'Weather', path: '/dashboard/weather', icon: <CloudSun size={20} /> },
+    { name: 'AI Crop Advisor', path: '/dashboard/ai-advisor', icon: <Sprout size={20} /> },
+    { name: 'Naturo Assistant', path: '/dashboard/naturo-assistant', icon: <MessageSquare size={20} /> },
+    { name: 'Weather', path: '/dashboard/weather', icon: <CloudRain size={20} /> },
     { name: 'Govt Schemes', path: '/dashboard/govt-schemes', icon: <BookOpen size={20} /> },
     { name: 'Settings', path: '/dashboard/settings', icon: <Settings size={20} /> },
   ];
@@ -43,9 +43,9 @@ const Sidebar = ({ isOpen, setOpen }) => {
       `}>
         
         {/* Brand Header */}
-        <div className="flex items-center justify-center h-16 border-b border-[#2D6A2D]">
-          <span className="text-2xl mr-2">🌱</span>
-          <span className="text-xl font-bold tracking-wider">CropMate</span>
+        <div className="flex items-center gap-3 px-6 py-5">
+          <span className="text-2xl">🌱</span>
+          <span className="text-xl font-bold tracking-wider">NaturoCrop</span>
         </div>
 
         {/* Navigation */}

@@ -33,7 +33,7 @@ const Login = () => {
       <div className="sm:mx-auto sm:w-full sm:max-w-md">
         <div className="flex justify-center text-3xl mb-2">🌱</div>
         <h2 className="text-center text-3xl font-extrabold text-gray-900">
-          Sign in to CropMate
+          Sign in to NaturoCrop
         </h2>
         <p className="mt-2 text-center text-sm text-gray-600">
           Or{' '}
