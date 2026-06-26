@@ -12,7 +12,7 @@ const Register = () => {
     confirmPassword: '' 
   });
   const [loading, setLoading] = useState(false);
-  const { login } = useContext(AuthContext);
+  const { login, register } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
