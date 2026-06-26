@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
-import { supabase } from '../../../utils/supabaseClient';
-import { AuthContext } from '../../../context/AuthContext';
+import { supabase } from '../../utils/supabaseClient';
+import { AuthContext } from '../../context/AuthContext';
 import { Plus, MapPin, Maximize, Droplets } from 'lucide-react';
 import toast from 'react-hot-toast';
 
